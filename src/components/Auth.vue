@@ -140,7 +140,12 @@
   </div>
 </template>
 <script>
+import useModalStore from '@/stores/modal'
+import { mapState } from 'pinia'
 export default {
-  name: 'AppAuth'
+  name: 'Auth',
+  computed: {
+    ...mapState(useModalStore, ['hiddenClass'])
+  }
 }
 </script>

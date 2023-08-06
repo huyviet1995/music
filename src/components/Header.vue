@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-reserved-component-names -->
 <template>
   <!-- Header -->
   <header id="header" class="bg-gray-700">
@@ -28,7 +29,7 @@ import useModalStore from '@/stores/modal'
 import { mapStores } from 'pinia'
 
 export default {
-  name: 'AppHeader',
+  name: 'Header',
   methods: {
     toggleAuthModal() {
       this.modalStore.isOpen = !this.modalStore.isOpen
