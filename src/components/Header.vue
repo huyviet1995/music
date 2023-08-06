@@ -12,8 +12,8 @@
           <!-- Navigation Links -->
           <li>
             <a class="px-2 text-white" href="#" @click.prevent="toggleAuthModal"
-              >Login / Register</a
-            >
+              >Login / Register
+            </a>
           </li>
           <li>
             <a class="px-2 text-white" href="#">Manage</a>
@@ -29,7 +29,7 @@ import useModalStore from '@/stores/modal'
 import { mapStores } from 'pinia'
 
 export default {
-  name: 'Header',
+  name: 'AppHeader',
   methods: {
     toggleAuthModal() {
       this.modalStore.isOpen = !this.modalStore.isOpen
